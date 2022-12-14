@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+  html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/styles/header_footer_catgallery.css">
+    <link rel="stylesheet" href="../assets/styles/file2_catgallery.css">
+    <!-- Fonts Used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<!-- Header -->
+<header>
+
+    <div id="headerTitle">
+        <img src="../assets/images/cat_gallery/site-logo-2.png" id="logo" alt="shelter logo">
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <!-- Added dropdown list depending on type of content -->
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">ABOUT PET ADOPTION</button>
+                    <div class="dropdown-content">
+                        <a href="Dog-Adopttion.html">Dog Adoption</a>
+                        <a href="#">Cat Adoption</a>
+                        <a href="gallery.html">Pet Gallery</a>
+                        <a href="">Pet Adoption Information</a>
+                        <a href="schedule.html">Schedule a visit</a>
+                        <a href="faqs.html">FAQs</a>
+                    </div>
+                </li>
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">DOG CARE</button>
+                    <div class="dropdown-content">
+                        <a href="#">Dog Nutrition</a>
+                        <a href="dog_breeds.html">Dog Breeds</a>
+                        <a href="bring_dog.html">Bring Dog home</a>
+                        <a href="#">Dog Grooming</a>
+                    </div>
+                </li>
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">CAT CARE</button>
+                    <div class="dropdown-content">
+                        <a href="cat_care.html">Cat Nutrition</a>
+                        <a href="#">Cat Behavior & Traits</a>
+                        <a href="cat_grooming.html">Cat Grooming</a>
+                        <a href="#">Cat Gallery</a>
+
+                    </div>
+                </li> 
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">VIDEOS</button>
+                </li>
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">ABOUT US</button>
+                </li>
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">CONTACT</button>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<body>
+    
+
+    
+
+  
+  <h1 style="color:red"><CENTER>WELCOME TO CAT GALLERY</CENTER></h1>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for your cat breed.." title="Type in a name">
+
+<ul id="myUL">
+  <li><a href="#">bobtail</a></li>
+  <li><a href="#">curi</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">wirehair</a></li>
+  <li><a href="#">bengal</a></li>
+  <li><a href="#">birman</a></li>
+
+  <li><a href="#">bobtail</a></li>
+  <li><a href="#">curi</a></li>
+
+  <li><a href="#">Billy</a></li>
+  <li><a href="#">Bob</a></li>
+
+  <li><a href="#">wirehair</a></li>
+  <li><a href="#">bengal</a></li>
+  <li><a href="#">birman</a></li>
+</ul>
+<center>
+
+<img src="../assets/images/cat_gallery/c3.jpg" alt="Paris" style="width:30%;">
+<img src="../assets/images/cat_gallery/c5.jpg" alt="Paris" style="width:30%;">
+
+</center>
+<h1></h1>
+<div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="../assets/images/cat_gallery/doc3.jpg" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>Jane Doe</h2>
+          <p class="title">CEO & Founder</p>
+          <p>Help cats to reduce major injuries.</p>
+          <p>example@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="../assets/images/cat_gallery/doc2.jpg" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Mike Ross</h2>
+          <p class="title">Art Director</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>example@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="../assets/images/cat_gallery/doc1.jpg" alt="John" style="width:100%">
+        <div class="container">
+          <h2>John Doe</h2>
+          <p class="title">Designer</p>
+          <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+          <p>example@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+    
+        
+
+
+</body>
+</html>

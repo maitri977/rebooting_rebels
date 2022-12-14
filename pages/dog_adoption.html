@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../assets/styles/dog_adoption.css">
+        <link rel="stylesheet" href="../assets/styles/general.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="../assets/images/General/favicon.ico">
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Fonts Used -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Chango&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div id="headerTitle">
+            <img src="../assets/images/General/logo.png" id="logo" alt="shelter logo">
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <!-- Added dropdown list depending on type of content -->
+                    <li class="changeColor dropdown">
+                        <button class="dropbtn">ABOUT PET ADOPTION</button>
+                        <div class="dropdown-content">
+                            <a href="dog_adoption.html">Dog Adoption</a>
+                            <a href="#">Cat Adoption</a>
+                            <a href="gallery.html">Pet Gallery</a>
+                            <a href="Dog-Adopttion.html">Pet Adoption Information</a>
+                            <a href="schedule.html">Schedule a Visit</a>
+                            <a href="faqs.html">FAQS</a>
+                        </div>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <button class="dropbtn">DOG CARE</button>
+                        <div class="dropdown-content">
+                            <a href="#">Dog Nutrition</a>
+                            <a href="dog_breeds.html">Dog Breeds</a>
+                            <a href="bring_dog.html">Bring Dog at home</a>
+
+                            <a href="#">Dog Grooming</a>
+                        </div>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <button class="dropbtn">CAT CARE</button>
+                        <div class="dropdown-content">
+                            <a href="cat_care.html">Cat Nutrition</a>
+                            <a href="#">Cat Behavior & Traits</a>
+                            <a href="cat_grooming.html">Cat Grooming</a>
+                            <a href="cat_gallery.html">Cat Gallery</a>
+
+                        </div>
+                    </li> 
+                    <li class="changeColor dropdown">
+                        <a href="videos.html"><button class="dropbtn">VIDEOS</button></a>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <a href="about.html"><button class="dropbtn">ABOUT US</button></a>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <button class="dropbtn">CONTACT</button>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Hamburger Menu which will only show on mobile devices -->
+            <input type="checkbox" id="hamburger-input" class="burger-shower" >
+            <label id="hamburger-menu" for="hamburger-input">
+                <nav id="sidebar-menu">
+                    <ul>
+                        <!-- Added dropdown list depending on type of content -->
+                        <li class="changeColor dropdown">
+                            <input type="checkbox" class="side-shower" for="hamburger-menu">
+                            <button class="dropbtn">ABOUT PET ADOPTION</button>
+                            <div class="dropdown-content">
+                                <a href="#">Dog Adoption</a>
+                                <a href="#">Cat Adoption</a>
+                                <a href="gallery.html">Pet Gallery</a>
+                                <a href="#">Pet Adoption Information</a>
+                                <a href="schedule.html">Schedule a Visit</a>
+                                <a href="faqs.html">FAQS</a>
+                            </div>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <input type="checkbox" class="side-shower" for="hamburger-menu">
+                            <button class="dropbtn">DOG CARE</button>
+                            <div class="dropdown-content">
+                                <a href="#">Dog Nutrition</a>
+                                <a href="dog_breeds.html">Dog Breeds</a>
+                            <a href="bring_dog.html">Bring Dog at home</a>
+
+                                <a href="#">Dog Grooming</a>
+                            </div>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <input type="checkbox" class="side-shower" for="hamburger-menu">
+                            <button class="dropbtn">CAT CARE</button>
+                            <div class="dropdown-content">
+                                <a href="cat_care.html">Cat Nutrition</a>
+                                <a href="#">Cat Behavior & Traits</a>
+                                <a href="cat_grooming.html">Cat Grooming</a>
+                            </div>
+                        </li> 
+                        <li class="changeColor dropdown">
+                            <button class="dropbtn">VIDEOS</button>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <a href="about.html"><button class="dropbtn">ABOUT US</button></a>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <button class="dropbtn">CONTACT</button>
+                        </li>
+                    </ul>
+                </nav>
+            </label>
+        </div>
+    </header>
+    <section>
+
+      
+        <div class="container_box">
+            <div class="desc">
+                <p><a href="#">Home</a> > <a href="#">About Pet Adoption</a></p>
+                <h1>Dog Adoption</h1>
+                <hr>
+            </div>
+            <div id="selimg0" class="desc_one1">
+                <div class="selectimgbox">
+                    <img src="" id="imgopen0" alt="">
+                </div>
+                <button onclick="closefun0()">Close</button>
+            </div>
+
+            <div class="desc_one">
+             <div class="img_desc">
+                <img onclick="openimg0(this.src)"  src="../assets/images/Dog_Adoption/download (1).jpg" alt="">
+                <h1><a href="#">Why Are Dogs Given Up?</a></h1>
+                <p>Find out the most common reasons for pet relinquishment. The truth may surprise you!</p>
+             </div>
+             <div class="img_desc">
+                <img onclick="openimg0(this.src)" src="../assets/images/Dog_Adoption/download (2).jpg" alt="">
+                <h1><a href="#">First 30 Days With A New Dog</a></h1>
+                <p>The first month is the most important to bond with a new dog. Learn what to expect.</p>
+             </div>
+            </div>
+            <div id="selimg" class="desc_all1">
+                <div class="selectimgbox">
+                    <img src="" id="imgopen" alt="">
+                </div>
+                <button onclick="closefun()">Close</button>
+            </div>
+
+            <div class="desc_all">
+                
+                <div class="imgbox">
+                    <img onclick="openimg(this.src)" src="../assets/images/Dog_Adoption/322868_1100-800x825.jpg" alt="">
+                </div>
+                <div class="content">
+                    <p><a href="#">Dog Adoption</a></p>
+                    <h2><a href="#">What Questions Should You Ask A Dog Breeder?</a></h2>
+                    <p>by Rebooting rebels</p>
+                    <p>You have decided that it’s time to add a pet to your family. After some consideration, you’ve fallen in love with a particular dog breed. Many people then look for a dog breeder to make their purebred-pup dream come true. Like any responsible future pet parent, you still have some questions before you take the plunge and choose your new …</p>
+                    <ul>
+                        <li><i id="icon" class="fa-brands fa-facebook"></i></li>
+                        <li><i id="icon" class="fa-brands fa-instagram"></i></li>
+                        <li><i id="icon" class="fa-brands fa-pinterest"></i></li>
+                        <li><i id="icon" class="fa-solid fa-envelope"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="selimg1" class="desc_all1">
+                <div class="selectimgbox">
+                    <img src="" id="imgopen1" alt="">
+                </div>
+                <button onclick="closefun1()">Close</button>
+            </div>
+            <div class="desc_all">
+                <div class="imgbox">
+                    <img onclick="openimg1(this.src)" src="../assets/images/Dog_Adoption/download (2).jpg" alt="">
+                </div>
+                <div class="content">
+                    <p><a href="#">Dog Adoption</a></p>
+                    <h2><a href="#">Dog Rehoming – How to Rehome Your Pet
+                    </a></h2>
+                    <p>by Rebooting rebels</p>
+                    <p>Rehoming a dog, in the first place, is not abandonment; as a matter of fact, it’s humane, mature, and responsible. Secondly, while there are various problems that can potentially cause pet parents to consider giving away their dog, comparatively there are also solutions.</p>
+                    <ul>
+                        <li><i id="icon" class="fa-brands fa-facebook"></i></li>
+                        <li><i id="icon" class="fa-brands fa-instagram"></i></li>
+                        <li><i id="icon" class="fa-brands fa-pinterest"></i></li>
+                        <li><i id="icon" class="fa-solid fa-envelope"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="selimg2" class="desc_all1">
+                <div class="selectimgbox">
+                    <img src="" id="imgopen2" alt="">
+                </div>
+                <button onclick="closefun2()">Close</button>
+            </div>
+            <div class="desc_all">
+                <div class="imgbox">
+                    <img onclick="openimg2(this.src)" src="../assets/images/Dog_Adoption/download (3).jpg" alt="">
+                </div>
+                <div class="content">
+                    <p><a href="#">Dog Adoption</a></p>
+                    <h2><a href="#">Military Dog Adoption</a></h2>
+                    <p>by Rebooting rebels</p>
+                    <p>Military dog adoption uniquely allows civilians to rehome military working dogs. Military working dogs are also known as, MWD. In brief, these dogs are especially unique as they’re retired from serving. Notably retired from duty, military working dogs are now on a special mission, by all means, to find a forever home. To point out, before 2000, military war dogs were euthanized or given to an allied army. In 2000, President Clinton significantly signed a law approving military dog adoption.</p>
+                    <ul>
+                        <li><i id="icon" class="fa-brands fa-facebook"></i></li>
+                        <li><i id="icon" class="fa-brands fa-instagram"></i></li>
+                        <li><i id="icon" class="fa-brands fa-pinterest"></i></li>
+                        <li><i id="icon" class="fa-solid fa-envelope"></i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="selimg3" class="desc_all1">
+                <div class="selectimgbox">
+                    <img src="" id="imgopen3" alt="">
+                </div>
+                <button onclick="closefun3()">Close</button>
+            </div>
+            <div class="desc_all">
+                <div class="imgbox">
+                    <img onclick="openimg3(this.src)" src="../assets/images/Dog_Adoption/download (4).jpg" alt="">
+                </div>
+                <div class="content">
+                    <p><a href="#">Dog Adoption</a></p>
+                    <h2><a href="#">Dogs with Different Colored Eyes Are Twice as Nice!</a></h2>
+                    <p>by Rebooting rebels</p>
+                    <p>Have you ever seen dogs with two different colored eyes? Stunning! But why does this happen? Find out everything you ever wanted to know about heterochromia.   The next time you come across a dog with two different colored eyes, don’t stop to clean your glasses or rub your eyes. You’re not seeing things — you’ve simply found a dog </p>
+                    <ul>
+                        <li><i id="icon" class="fa-brands fa-facebook"></i></li>
+                        <li><i id="icon" class="fa-brands fa-instagram"></i></li>
+                        <li><i id="icon" class="fa-brands fa-pinterest"></i></li>
+                        <li><i id="icon" class="fa-solid fa-envelope"></i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="selimg4" class="desc_all1">
+                <div class="selectimgbox">
+                    <img src="" id="imgopen4" alt="">
+                </div>
+                <button onclick="closefun4()">Close</button>
+            </div>
+            <div class="desc_all">
+                <div class="imgbox">
+                    <img onclick="openimg4(this.src)" src="../assets/images/Dog_Adoption/download (5).jpg" alt="">
+                </div>
+                <div class="content">
+                    <p><a href="#">Dog Adoption</a></p>
+                    <h2><a href="#">Cool Dog Names</a></h2>
+                    <p>by Rebooting rebels</p>
+                    <p>Getting a new dog? Consider one of these cool dog names and maybe some of the cool will rub off on you. A cool dog name makes for a cool pet owner. Why settle for an ordinary dog name like Fido or Scooter when your dog can lead the pack with one of these instead?</p>
+                    <ul>
+                        <li><i id="icon" class="fa-brands fa-facebook"></i></li>
+                        <li><i id="icon" class="fa-brands fa-instagram"></i></li>
+                        <li><i id="icon" class="fa-brands fa-pinterest"></i></li>
+                        <li><i id="icon" class="fa-solid fa-envelope"></i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="selimg5" class="desc_all1">
+                <div class="selectimgbox">
+                    <img src="" id="imgopen5" alt="">
+                </div>
+                <button onclick="closefun5()">Close</button>
+            </div>
+            <div class="desc_all">
+                <div class="imgbox">
+                    <img onclick="openimg5(this.src)" src="../assets/images/Dog_Adoption/download (6).jpg" alt="">
+                </div>
+                <div class="content">
+                    <p><a href="#">Dog Adoption</a></p>
+                    <h2><a href="#">20 Most Popular Pet Names</a></h2>
+                    <p>by Rebooting rebels</p>
+                    <p>Whether you looking for something trendy or a perennial favorite, we’ve got a guide to the 20 most popular pet names. Naming dogs and cats is one of the many joys of adopting a new pet. The names can reflect our interests, while other names just seem to fit a pet’s personality. The most popular names for male and female dogs and cats sometimes reflects cultural trends (see Bella), but there are some pet names that always seems to land paws first in the top 10.</p>
+                    <ul>
+                        <li><i id="icon" class="fa-brands fa-facebook"></i></li>
+                        <li><i id="icon" class="fa-brands fa-instagram"></i></li>
+                        <li><i id="icon" class="fa-brands fa-pinterest"></i></li>
+                        <li><i id="icon" class="fa-solid fa-envelope"></i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="selimg6" class="desc_all1">
+                <div class="selectimgbox">
+                    <img src="" id="imgopen6" alt="">
+                </div>
+                <button onclick="closefun6()">Close</button>
+            </div>
+            <div class="desc_all">
+                <div class="imgbox">
+                    <img onclick="openimg6(this.src)" src="../assets/images/Dog_Adoption/download (7).jpg" alt="">
+                </div>
+                <div class="content">
+                    <p><a href="#">Dog Adoption</a></p>
+                    <h2><a href="#">Why Do Bloodhounds Have Long Ears? The Better to Smell You With!</a></h2>
+                    <p>by Rebooting rebels</p>
+                    <p>Bloodhounds are champion sniffers, but how do all of those flopping folds and jiggling jowls function? Meet the dogs who smell with their ears! Bloodhounds are champion sniffers — even by dog standards. Although every dog is certainly greater than the sum of its parts, there is some truth to the affectionate description of Bloodhounds as “noses with dogs attached.” The Bloodhound’s entire body is designed to make it better at finding and following smells. Their fellow “scent hounds” — Basset Hounds and Coonhounds— also have powerful noses and great reputations for tracking scents. A quick look at these breeds reveals a few other common features like long ears, droopy jowls, and lots of wrinkles.</p>
+                    <ul>
+                        <li><i id="icon" class="fa-brands fa-facebook"></i></li>
+                        <li><i id="icon" class="fa-brands fa-instagram"></i></li>
+                        <li><i id="icon" class="fa-brands fa-pinterest"></i></li>
+                        <li><i id="icon" class="fa-solid fa-envelope"></i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="selimg7" class="desc_all1">
+                <div class="selectimgbox">
+                    <img src="" id="imgopen7" alt="">
+                </div>
+                <button onclick="closefun7()">Close</button>
+            </div>
+            <div class="desc_all">
+                <div class="imgbox">
+                    <img onclick="openim7(this.src)" src="../assets/images/Dog_Adoption/download (8).jpg" alt="">
+                </div>
+                <div class="content">
+                    <p><a href="#">Dog Adoption</a></p>
+                    <h2><a href="#">Feeling Stressed? Learn the Health Benefits of Having a Pet</a></h2>
+                    <p>by Rebooting rebels</p>
+                    <p>Learn how a pet can help boost your mood. Most pet owners agree that snuggling with a cat or dog after a hard day of work can instantly produce feelings of happiness and relaxation. That warm fuzzy reaction you get when your dog licks your hand or your cat rubs against your leg isn’t merely a fluke. Numerous studies have proven that spending time with a pet can eliminate stress and improve your overall sense of well-being. Take a look at a couple of the surprising ways in which dogs and cats can decrease your anxiety levels and give your mood a much-needed boost.</p>
+                    <ul>
+                        <li><i id="icon" class="fa-brands fa-facebook"></i></li>
+                        <li><i id="icon" class="fa-brands fa-instagram"></i></li>
+                        <li><i id="icon" class="fa-brands fa-pinterest"></i></li>
+                        <li><i id="icon" class="fa-solid fa-envelope"></i></li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer>
+                <div id="footerContent">
+                    <div id="left-footer">
+                        <img src="../assets/images/General/logo.png" id="footer-logo" alt="shelter logo">
+                        <h3>Adopt them, play with them, help them, and make them happy.</h3>
+                    </div>
+                    <div id="center-footer">
+                        <p>FOLLOW US</p>
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-twitter"></i>
+                        <i class="fa fa-youtube"></i>
+                    </div>
+                    <div id="right-footer">
+                        <p>CALL US</p>
+                        <p>+1-613-555-0113</p>
+                        <p>+1-416-555-0191</p>
+                    </div>
+                    <div id="bottom-footer">
+                        <p>&copy; 2022 Wags & Whiskers. Pet Adoption Shelter Toronto, Canada. All Rights Reserved</p>
+                        <p>PRIVACY POLICY</p>
+                        <p>TERMS AND CONDITIONS</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        
+    </section>   
+    
+    <script src="../js/index.js"></script>
+</body>
+</html>

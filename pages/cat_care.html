@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/styles/general.css">
+  <link rel="stylesheet" type="text/css" href="../assets/styles/cat_care_body.css">
+  <!-- <link rel="stylesheet" href="header_footer1.html"> -->
+  <style>
+   
+
+  
+  </style>
+</head>
+<script src="https://www.w3schools.com/lib/w3.js"></script>
+<body>
+  <header>
+    <div id="headerTitle">
+        <img src="../assets/images/General/logo.png" id="logo" alt="shelter logo">
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <!-- Added dropdown list depending on type of content -->
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">ABOUT PET ADOPTION</button>
+                    <div class="dropdown-content">
+                        <a href="dog_adoption.html">Dog Adoption</a>
+                        <a href="#">Cat Adoption</a>
+                        <a href="gallery.html">Pet Gallery</a>
+                        <a href="Dog-Adopttion.html">Pet Adoption Information</a>
+                        <a href="schedule.html">Schedule a Visit</a>
+                        <a href="faqs.html">FAQS</a>
+                    </div>
+                </li>
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">DOG CARE</button>
+                    <div class="dropdown-content">
+                        <a href="#">Dog Nutrition</a>
+                        <a href="dog_breeds.html">Dog Breeds</a>
+                        <a href="bring_dog.html">Bring Dog at home</a>
+                        <a href="#">Dog Grooming</a>
+                    </div>
+                </li>
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">CAT CARE</button>
+                    <div class="dropdown-content">
+                      <a href="cat_care.html">Cat Nutrition</a>
+                      <a href="#">Cat Behavior & Traits</a>
+                      <a href="cat_grooming.html">Cat Grooming</a>
+                      <a href="cat_gallery.html">Cat Gallery</a>
+
+                    </div>
+                </li> 
+                <li class="changeColor dropdown">
+                  <a href="videos.html"><button class="dropbtn">Videos</button></a>
+                </li>
+                <li class="changeColor dropdown">
+                    <a href="about.html"><button class="dropbtn">ABOUT US</button></a>
+                </li>
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">CONTACT</button>
+                </li>
+            </ul>
+        </nav>
+        <!-- Hamburger Menu which will only show on mobile devices -->
+        <input type="checkbox" id="hamburger-input" class="burger-shower" >
+        <label id="hamburger-menu" for="hamburger-input">
+            <nav id="sidebar-menu">
+                <ul>
+                    <!-- Added dropdown list depending on type of content -->
+                    <li class="changeColor dropdown">
+                        <input type="checkbox" class="side-shower" for="hamburger-menu">
+                        <button class="dropbtn">ABOUT PET ADOPTION</button>
+                        <div class="dropdown-content">
+                            <a href="#">Dog Adoption</a>
+                            <a href="#">Cat Adoption</a>
+                            <a href="gallery.html">Pet Gallery</a>
+                            <a href="#">Pet Adoption Information</a>
+                            <a href="schedule.html">Schedule a Visit</a>
+                            <a href="faqs.html">FAQS</a>
+                        </div>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <input type="checkbox" class="side-shower" for="hamburger-menu">
+                        <button class="dropbtn">DOG CARE</button>
+                        <div class="dropdown-content">
+                            <a href="#">Dog Nutrition</a>
+                            <a href="dog_breeds.html">Dog Breeds</a>
+                            <a href="#">Dog Grooming</a>
+                        </div>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <input type="checkbox" class="side-shower" for="hamburger-menu">
+                        <button class="dropbtn">CAT CARE</button>
+                        <div class="dropdown-content">
+                          <a href="cat_care.html">Cat Nutrition</a>
+                          <a href="#">Cat Behavior & Traits</a>
+                          <a href="cat_grooming.html">Cat Grooming</a>
+                        </div>
+                    </li> 
+                    <li class="changeColor dropdown">
+                        <button class="dropbtn">VIDEOS</button>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <button onclick="window.location.pathname='about.html'" class="dropbtn">ABOUT US</button>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <button class="dropbtn">CONTACT</button>
+                    </li>
+                </ul>
+            </nav>
+        </label>
+    </div>
+  </header>
+  <p>Click the button to print the current page.</p>
+    
+    <button onclick="window.print()">Print this page</button>
+  <script src="../js/cat_care.js"></script>
+  <div class="container">
+    <header class="header">
+      <h1>CAT PERSONAL CARE</h1>
+      
+        
+        
+  <p>
+    <button onclick="w3.hide('#cat')">HIDE CAT MASSAGE</button>
+    <button onclick="w3.show('#cat')">SHOW CAT MASSAGE</button>
+    
+    </p>
+    <div id="cat">
+      <h2 style="color:blue">CAT MASSAGE</h2>
+      <p style="color:brown">This cat massage will relax your cat body and feel it relaxed.</p>
+    </div>
+    
+    <div id="cat1">
+      <h2 style="color:blue">CAT GROMMING</h2>
+      <p style="color:brown">This cat gromming helps to groom your cat hair perfectly fine.</p> 
+    </div>
+    
+    <div id="cat2">
+      <h2 style="color:blue">CAT BATH AND GROMMING</h2>
+      <p style="color:brown">This help your cat have a perfect bath and groom nicely.</p>
+    </div>
+    
+  
+      
+    </header>
+    <button onclick="myFunc()"><B>IF YOU ARE INTERSTED PLEASE PRESS THIS BUTTON</B></button>
+    <form id="form"> 
+        <input type="search" id="query" name="q" placeholder="Search...">
+        <button>Search</button>
+      </form>
+      
+      <ul>
+        <li><a href="">FOOD</a></li>
+        <li><a href="">BATHING</a></li>
+        <li><a href="">EXERCISE</a></li>
+        
+      </ul>
+      <br><br>
+      <h1><p style="color:rgb(23, 38, 201)"><b>"HELP YOUR CUTE CAT WITH THE DAILY CARE ROUTINE."</h1></b><br></p>
+    </aside>
+    <main class="content">
+      <h2>CAT DAILY CARE PRODUCTS</h2>
+     
+
+      
+        <img src="../assets/images/Cat_care/pica.jpg" alt="MEAL" width="400"; height="200">
+  <h1>CAT MEAL</h1>
+  <p class="price">$19.99</p>
+  <p>This is the healty cat meal you should add to your cart.</p>
+  <p><button>Add to Cart</button></p>
+          <img src="../assets/images/Cat_care/picb.jpg" alt="MEAL" width="400"; height="200">
+  <h1>CAT MEAL</h1>
+  <p class="price">$39.99</p>
+  <p>This is the healty cat meal you should add to your cart.</p>
+  <p><button>Add to Cart</button></p>
+      </form>
+      <p>Search your daily cat care product here may help to find some intersting.</p>
+      <h2>CAT TOYS</h2>
+      <img src="../assets/images/Cat_care/thT.jpg" alt="MEAL" width="400"; height="200">
+      <p class="price">$19.99</p>
+  <p>This is the best toy for your pet.</p>
+  <p><button>Add to Cart</button></p>
+      <form id="form"> 
+        <input type="search" id="query" name="q" placeholder="Search your cat toys...">
+        <button>GO!!</button>
+      </form>
+      <p>Hope you find your cat most favourite toys!.</p>
+      <hr><br>
+      <h2>How Can you help your pet?</h2>
+      <table>
+        <tr>
+          <th>WALK</th>
+          <th>PLAY</th>
+          <th>FOOD</th>
+        </tr>
+        <tr>
+          <td><i class="fas fa-broom"></i></td>
+          <td><i class="fas fa-archive"></i></td>
+          <td><i class="fas fa-trailer"></i></td>
+        </tr>
+        <tr>
+          <td>Have a good walk in the park</td>
+          <td>entertain your pet</td>
+          <td>lets feed your pet a healty meal</td>
+        </tr>
+        <tr>
+      </table>
+      FOR MORE DETAIL CONTACT US
+      <form>
+        
+        <label>Email: <input type="text" name="email"></label><br>
+        <label> Mobile: <input type="text" name="mobile"> </label><br>
+        <textarea name="comments" rows="4">Enter your message</textarea><br>
+        <input type="submit" value="Submit" /><br>
+      </form>
+    </main>
+    <footer>
+      <div id="footerContent">
+          <div id="left-footer">
+              <img src="../assets/images/General/logo.png" id="footer-logo" alt="shelter logo">
+              <h3>Adopt them, play with them, help them, and make them happy.</h3>
+          </div>
+          <div id="center-footer">
+              <p>FOLLOW US</p>
+              <i class="fa fa-facebook"></i>
+              <i class="fa fa-instagram"></i>
+              <i class="fa fa-twitter"></i>
+              <i class="fa fa-youtube"></i>
+          </div>
+          <div id="right-footer">
+              <p>CALL US</p>
+              <p>+1-613-555-0113</p>
+              <p>+1-416-555-0191</p>
+          </div>
+          <div id="bottom-footer">
+              <p>&copy; 2022 Wags & Whiskers. Pet Adoption Shelter Toronto, Canada. All Rights Reserved</p>
+              <p>PRIVACY POLICY</p>
+              <p>TERMS AND CONDITIONS</p>
+          </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
+
+

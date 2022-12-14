@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+        name="description" 
+        content="Wags and Whiskers is a local pet shelter in the Greater Toronto Area which has saved over more than 1000 of our furry friends."
+    >
+    <meta name="keywords" content="dogs, cats, pets, adoption, pet care">
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../assets/styles/schedule.css">
+    <link rel="stylesheet" href="../assets/styles/general.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/General/favicon.ico">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts Used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Title -->
+    <title>Wags & Whiskers - Schedule a Visit</title>
+</head>
+<body>
+    <div id="main-wrapper">
+        <!-- Header -->
+        <header>
+            <div id="headerTitle">
+                <img src="../assets/images/General/logo.png" id="logo" alt="shelter logo">
+                <!-- Navbar -->
+                <nav>
+                    <ul>
+                        <!-- Added dropdown list depending on type of content -->
+                        <li class="changeColor dropdown">
+                            <button class="dropbtn">ABOUT PET ADOPTION</button>
+                            <div class="dropdown-content">
+                                <a href="dog_adoption.html">Dog Adoption</a>
+                                <a href="#">Cat Adoption</a>
+                                <a href="gallery.html">Pet Gallery</a>
+                                <a href="Dog-Adopttion.html">Pet Adoption Information</a>
+                                <a href="schedule.html">Schedule a Visit</a>
+                                <a href="faqs.html">FAQS</a>
+                            </div>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <button class="dropbtn">DOG CARE</button>
+                            <div class="dropdown-content">
+                                <a href="#">Dog Nutrition</a>
+                                <a href="dog_breeds.html">Dog Breeds</a>
+                            <a href="bring_dog.html">Bring Dog at home</a>
+
+                                <a href="#">Dog Grooming</a>
+                            </div>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <button class="dropbtn">CAT CARE</button>
+                            <div class="dropdown-content">
+                                <a href="cat_care.html">Cat Nutrition</a>
+                                <a href="#">Cat Behavior & Traits</a>
+                                <a href="cat_grooming.html">Cat Grooming</a>
+                            <a href="cat_gallery.html">Cat Gallery</a>
+
+                            </div>
+                        </li> 
+                        <li class="changeColor dropdown">
+                            <a href="videos.html"><button class="dropbtn">VIDEOS</button></a>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <a href="about.html"><button class="dropbtn">ABOUT US</button></a>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <button class="dropbtn">CONTACT</button>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Hamburger Menu which will only show on mobile devices -->
+                <input type="checkbox" id="hamburger-input" class="burger-shower" >
+                <label id="hamburger-menu" for="hamburger-input">
+                    <nav id="sidebar-menu">
+                        <ul>
+                            <!-- Added dropdown list depending on type of content -->
+                            <li class="changeColor dropdown">
+                                <input type="checkbox" class="side-shower" for="hamburger-menu">
+                                <button class="dropbtn">ABOUT PET ADOPTION</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Dog Adoption</a>
+                                    <a href="#">Cat Adoption</a>
+                                    <a href="gallery.html">Pet Gallery</a>
+                                    <a href="#">Pet Adoption Information</a>
+                                    <a href="schedule.html">Schedule a Visit</a>
+                                    <a href="faqs.html">FAQS</a>
+                                </div>
+                            </li>
+                            <li class="changeColor dropdown">
+                                <input type="checkbox" class="side-shower" for="hamburger-menu">
+                                <button class="dropbtn">DOG CARE</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Dog Nutrition</a>
+                                    <a href="dog_breeds.html">Dog Breeds</a>
+                                    <a href="bring_dog.html">Bring Dog at home</a>
+
+                                    <a href="#">Dog Grooming</a>
+                                </div>
+                            </li>
+                            <li class="changeColor dropdown">
+                                <input type="checkbox" class="side-shower" for="hamburger-menu">
+                                <button class="dropbtn">CAT CARE</button>
+                                <div class="dropdown-content">
+                                    <a href="cat_care.html">Cat Nutrition</a>
+                                    <a href="#">Cat Behavior & Traits</a>
+                                    <a href="cat_grooming.html">Cat Grooming</a>
+                                <a href="cat_gallery.html">Cat Gallery</a>
+                                </div>
+                            </li> 
+                            <li class="changeColor dropdown">
+                                <button class="dropbtn">VIDEOS</button>
+                            </li>
+                            <li class="changeColor dropdown">
+                                <button onclick="window.location.pathname='about.html'" class="dropbtn">ABOUT US</button>
+                            </li>
+                            <li class="changeColor dropdown">
+                                <button class="dropbtn">CONTACT</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </label>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main id="scheduleMain">
+            <section id="mainSection">
+                <div id="booking" class="scheduleSection">
+                    <div class="section-center">
+                        <div class="container">
+                            <div class="row">
+                                <div class="booking-form">
+                                    <div class="form-header">
+                                        <h1>Schedule a Visit</h1>
+                                    </div>
+                                    <div id="visitForm">
+                                        <div class="form-group form-name-container" required> 
+                                            <input id="fname" name="firstName" class="form-control form-name" type="text" placeholder="First Name" required><span class="form-label">First Name</span> 
+                                            <input id="lname" name="lastName" class="form-control form-name" type="text" placeholder="Last Name" required><span class="form-label">Last Name</span> 
+                                        </div>
+                                        <div class="form-group form-date-container"> 
+                                            <input id="visitDate" name="visitDate" class="form-control form-date" type="date" required><span class="form-label">Visit Date</span>
+                                        </div>
+                                        <div class="form-group form-contact-container"> 
+                                            <input id="email" name="email" class="form-control form-contact" type="email" placeholder="Email" required> <span class="form-label">Email</span> 
+                                            <input id="phone" name="phone" class="form-control form-contact" type="tel" placeholder="Phone" required> <span class="form-label">Phone</span> 
+                                            
+                                        </div>
+                                        <div class="form-btn">
+                                        <p id="notification"></p>
+                                        <button class="submit-btn" id="submitBtn" onclick="getDetails()">Schedule Now</button>
+                                    </div>
+                                    <!-- Trigger/Open The Modal -->
+                                    <button class="submit-btn" id="viewVisitBtn">View Visit Details</button>
+
+                                    <!-- The Modal -->
+                                    <div id="myModal" class="modal">
+
+                                        <!-- Modal content -->
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                              <span class="close">&times;</span>
+                                              <h2>Visitation Details</h2>
+                                            </div>
+                                            <div id="detailsContainer">
+                                                <ul id="detailsList">
+                                                    <li id="finalFname">First Name: </li>
+                                                    <li id="finalLname">Last Name: </li>
+                                                    <li id="finalDate">Visit Date: </li>
+                                                    <li id="finalEmail">Email: </li>
+                                                    <li id="finalPhone">Phone: </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <aside class="asideSection">
+                <h3>Visitation Guidelines</h3>
+                <ul id="schedGuide">
+                    <li>You can only schedule a visit upon passing the application screening.</li>
+                    <li>This visit also acts as an in-person meet and greet for your chosen pet.</li>
+                    <li>You will be asked to check-in at the front door and will be permitted entry based on current capacity.</li>
+                    <li>Please bring at least one piece of ID provided at the time of visit. It must be a non-expired government issued ID containing proof of address (e.g. driver’s license, passport, status card, etc.).</li>
+                    <li>Our shelter is open from 9:00 AM to 3:00PM.</li>
+                </ul>
+            </aside>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <div id="footerContent">
+                <div id="left-footer">
+                    <img src="../assets/images/General/logo.png" id="footer-logo" alt="shelter logo">
+                    <h3>Adopt them, play with them, help them, and make them happy.</h3>
+                </div>
+                <div id="center-footer">
+                    <p>FOLLOW US</p>
+                    <i class="fa fa-facebook"></i>
+                    <i class="fa fa-instagram"></i>
+                    <i class="fa fa-twitter"></i>
+                    <i class="fa fa-youtube"></i>
+                </div>
+                <div id="right-footer">
+                    <p>CALL US</p>
+                    <p>+1-613-555-0113</p>
+                    <p>+1-416-555-0191</p>
+                </div>
+                <div id="bottom-footer">
+                    <p>&copy; 2022 Wags & Whiskers. Pet Adoption Shelter Toronto, Canada. All Rights Reserved</p>
+                    <p>PRIVACY POLICY</p>
+                    <p>TERMS AND CONDITIONS</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- Script for the Filter function -->
+    <script src="../js/schedule.js"></script>
+</body>
+</html>

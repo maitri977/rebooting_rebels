@@ -1,0 +1,12 @@
+node_modules/
+
+
+.vscode/*
+!.vsode/settings.json
+!.vsode/tasks.json
+!.vsode/launch.json
+!.vsode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/

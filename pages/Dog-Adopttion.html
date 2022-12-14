@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta 
+        name="description" 
+        content="Wags and Whiskers is a local pet shelter in the Greater Toronto Area which has saved over more than 1000 of our furry friends."
+    >
+    <meta name="keywords" content="dogs, cats, pets, adoption, pet care">
+    <!-- CSS Stylesheets -->
+    
+    <link rel="stylesheet" href="../assets/styles/general.css">
+    <link rel="stylesheet" href="../assets/styles/dog.css">
+    <link rel="stylesheet" href="../assets/styles/style.css">
+    <link rel="stylesheet" href="../assets/styles/header_footer.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/General/favicon.ico">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts Used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Title -->
+    <title>Wags & Whiskers - Pet Adoption Information</title>
+</head>
+<body>
+    <div id="main-wrapper">
+        <!-- Header -->
+        <header>
+            <div id="headerTitle">
+                <img src="../assets/images/General/logo.png" id="logo" alt="shelter logo">
+                <!-- Navbar -->
+                <nav>
+                    <ul>
+                        <!-- Added dropdown list depending on type of content -->
+                        <li class="changeColor dropdown">
+                            <button class="dropbtn">ABOUT PET ADOPTION</button>
+                            <div class="dropdown-content">
+                                <a href="dog_adoption.html">Dog Adoption</a>
+                                <a href="#">Cat Adoption</a>
+                                <a href="gallery.html">Pet Gallery</a>
+                                <a href="Dog-Adopttion.html">Pet Adoption Information</a>
+                                <a href="schedule.html">Schedule a Visit</a>
+                                <a href="faqs.html">FAQS</a>
+                            </div>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <button class="dropbtn">DOG CARE</button>
+                            <div class="dropdown-content">
+                                <a href="#">Dog Nutrition</a>
+                                <a href="dog_breeds.html">Dog Breeds</a>
+                                <a href="bring_dog.html">Bring Dog at home</a>
+
+                                <a href="#">Dog Grooming</a>
+                            </div>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <button class="dropbtn">CAT CARE</button>
+                            <div class="dropdown-content">
+                                <a href="cat_care.html">Cat Nutrition</a>
+                                <a href="#">Cat Behavior & Traits</a>
+                                <a href="cat_grooming.html">Cat Grooming</a>
+                            <a href="cat_gallery.html">Cat Gallery</a>
+
+                            </div>
+                        </li> 
+                        <li class="changeColor dropdown">
+                            <a href="videos.html"><button class="dropbtn">VIDEOS</button></a>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <a href="about.html"><button class="dropbtn">ABOUT US</button></a>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <button class="dropbtn">CONTACT</button>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Hamburger Menu which will only show on mobile devices -->
+                <input type="checkbox" id="hamburger-input" class="burger-shower" >
+                <label id="hamburger-menu" for="hamburger-input">
+                    <nav id="sidebar-menu">
+                        <ul>
+                            <!-- Added dropdown list depending on type of content -->
+                            <li class="changeColor dropdown">
+                                <input type="checkbox" class="side-shower" for="hamburger-menu">
+                                <button class="dropbtn">ABOUT PET ADOPTION</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Dog Adoption</a>
+                                    <a href="#">Cat Adoption</a>
+                                    <a href="gallery.html">Pet Gallery</a>
+                                    <a href="Dog-Adopttion.html">Pet Adoption Information</a>
+                                    <a href="schedule.html">Schedule a Visit</a>
+                                    <a href="faqs.html">FAQS</a>
+                                </div>
+                            </li>
+                            <li class="changeColor dropdown">
+                                <input type="checkbox" class="side-shower" for="hamburger-menu">
+                                <button class="dropbtn">DOG CARE</button>
+                                <div class="dropdown-content">
+                                    <a href="#">Dog Nutrition</a>
+                                    <a href="dog_breeds.html">Dog Breeds</a>
+                                    <a href="cat_care.html">Dog Grooming</a>
+                                </div>
+                            </li>
+                            <li class="changeColor dropdown">
+                                <input type="checkbox" class="side-shower" for="hamburger-menu">
+                                <button class="dropbtn">CAT CARE</button>
+                                <div class="dropdown-content">
+                                    <a href="cat_care.html">Cat Nutrition</a>
+                                    <a href="#">Cat Behavior & Traits</a>
+                                    <a href="cat_grooming.html">Cat Grooming</a>
+                                </div>
+                            </li> 
+                            <li class="changeColor dropdown">
+                                <a href="../pages/videos.html">VIDEOS</a>
+                            </li>
+                            <li class="changeColor dropdown">
+                                <button onclick="window.location.pathname='about.html'" class="dropbtn">ABOUT US</button>
+                            </li>
+                            <li class="changeColor dropdown">
+                                <button class="dropbtn">CONTACT</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </label>
+            </div>
+        </header>
+<!--back to top-->
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
+    
+<h1>Pet Adoption Information</h1>
+    <div class="seventy1">
+        <ul>
+            <li><img src="../assets/images/home/dog-why.jpg" alt="sad dog image"></li>
+            <li><a href="../assets/Sub-Pages/why-dog.html"><h3>Why are dogs given up?</h3></a></li>
+            <li><p>Learn the most common reasons dogs are given up</p></li>
+            <li><img src="../assets/images/home/dane.jpg" alt="dog image"></li>
+            <li><a href="../assets/Sub-Pages/First-Month-dog.html"><h3>First Month With A Dog</h3></a></li>
+            <li><p>First Month is the most important to bond with a new dog.</p></li>
+            <li><img src="../assets/images/home/dog.jpg" alt="sad dog image"></li>
+            <li><a href="../assets/Sub-Pages/why-dog.html"><h3>Why are dogs given up?</h3></a></li>
+            <li><p>Learn the most common reasons dogs are given up</p></li>
+        </ul>
+    </div>
+    <div class="container">
+        <form id="form" class="form">
+            <h2>Ask Away any Questions or Your messages Here!</h2>
+            <div class="form-control">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter Username">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email">
+                <small>Error Message</small>
+            </div>
+            <div class="form-control">
+                <label for="password">Message</label>
+                <input type="password" id="password" placeholder="Your Message Here">
+                <small>Error Message</small>
+            <button>Submit</button>
+            </div> 
+        </form>
+    </div>
+    
+<!-- Footer -->
+<footer>
+    <div id="footerContent">
+        <div id="left-footer">
+            <img src="../assets/images/General/logo.png" id="footer-logo" alt="shelter logo">
+            <h3>Adopt them, play with them, help them, and make them happy.</h3>
+        </div>
+        <div id="center-footer">
+            <p>FOLLOW US</p>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+        <div id="right-footer">
+            <p>CALL US</p>
+            <p>+1-613-555-0113</p>
+            <p>+1-416-555-0191</p>
+        </div>
+        <div id="bottom-footer">
+            <p>&copy; 2022 Wags & Whiskers. Pet Adoption Shelter Toronto, Canada. All Rights Reserved</p>
+            <p>PRIVACY POLICY</p>
+            <p>TERMS AND CONDITIONS</p>
+        </div>
+    </div>
+</footer>
+<script src="../js/chintan-js.js"></script>
+</body>
+</html>

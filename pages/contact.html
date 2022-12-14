@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/styles/contact.css">
+    <!-- Fonts Used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        background-image: url('images/dog11.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: top;
+    }
+</style>
+</head>
+<body>
+<!-- HEADER -->
+<header>
+    <div id="headerTitle">
+        <img src="../assets/images/Landing/site-logo-2.png" id="logo" alt="shelter logo">
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <!-- Added dropdown list depending on type of content -->
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">ABOUT PET ADOPTION</button>
+                    <div class="dropdown-content">
+                        <a href="dog_adoption.html">Dog Adoption</a>
+                        <a href="#">Cat Adoption</a>
+                        <a href="gallery.html">Pet Gallery</a>
+                        <a href="Dog-Adopttion.html">Pet Adoption Information</a>
+                        <a href="schedule.html">Schedule a Visit</a>
+                    </div>
+                </li>
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">DOG CARE</button>
+                    <div class="dropdown-content">
+                        <a href="#">Dog Nutrition</a>
+                        <a href="dog_breeds.html">Dog Breeds</a>
+                        <a href="bring_dog.html">Bring Dog at home</a>
+  
+                        <a href="#">Dog Grooming</a>
+                    </div>
+                </li>
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">CAT CARE</button>
+                    <a href="cat_care.html">Cat Nutrition</a>
+                    <a href="#">Cat Behavior & Traits</a>
+                    <a href="cat_grooming.html">Cat Grooming</a>
+                    <a href="cat_gallery.html">Cat Gallery</a>
+                </li> 
+                <li class="changeColor dropdown">
+                    <a href="videos.html"><button class="dropbtn">VIDEOS</button></a>
+                </li>
+                <li class="changeColor dropdown">
+                    <a href="about.html"><button class="dropbtn">ABOUT US</button></a>
+                </li>
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">CONTACT</button>
+                </li>
+            </ul>
+        </nav>
+        <!-- Hamburger Menu which will only show on mobile devices -->
+        <input type="checkbox" id="hamburger-input" class="burger-shower" >
+        <label id="hamburger-menu" for="hamburger-input">
+            <nav id="sidebar-menu">
+                <ul>
+                    <!-- Added dropdown list depending on type of content -->
+                    <li class="changeColor dropdown">
+                        <input type="checkbox" class="side-shower" for="hamburger-menu">
+                        <button class="dropbtn">ABOUT PET ADOPTION</button>
+                        <div class="dropdown-content">
+                            <a href="#">Dog Adoption</a>
+                            <a href="#">Cat Adoption</a>
+                            <a href="#">Pet Adoption Information</a>
+                            <a href="gallery.html">Pet Gallery</a>
+                        </div>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <input type="checkbox" class="side-shower" for="hamburger-menu">
+                        <button class="dropbtn">DOG CARE</button>
+                        <div class="dropdown-content">
+                            <a href="#">Dog Nutrition</a>
+                            <a href="#">Dog Behavior & Traits</a>
+                            <a href="#">Dog Grooming</a>
+                        </div>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <input type="checkbox" class="side-shower" for="hamburger-menu">
+                        <button class="dropbtn">CAT CARE</button>
+                        <div class="dropdown-content">
+                            <a href="#">Cat Nutrition</a>
+                            <a href="#">Cat Behavior & Traits</a>
+                            <a href="#">Cat Grooming</a>
+                        </div>
+                    </li> 
+                    <li class="changeColor dropdown">
+                        <button class="dropbtn">VIDEOS</button>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <a href="about.html"><button class="dropbtn">ABOUT US</button></a>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <button class="dropbtn">CONTACT</button>
+                    </li>
+                </ul>
+            </nav>
+        </label>
+    </div>
+</header>
+<body>
+    <h3>Cotact Us Online</h3>
+    <p>Please use this form for general questions about our website. For inquiries related 
+        to a specific animal, kindly reach out directly to the shelter where the animal is located. 
+        Shelter information is listed on each animal's profile page. Thank you!</p>
+    <h3>Social Handles</h3>
+    <a href="https://twitter.com/home">Twitter</a><br><br>
+    <a href="https://www.instagram.com/instagram/?hl=en">instagram</a><br><br>
+    <a href="https://www.facebook.com">Facebook</a><br><br>
+    <form id="contact">
+        <label for="name" aria-placeholder="name">Name</label>
+            <input placeholder="name" name="name" id="name" type="text" required><br><br>
+        <label for="email" aria-placeholder="email">E-mail:</label>
+            <input placeholder="email" name="email" id="email" type="email" required/><br><br>
+        <label for="Phone" aria-placeholder="phone">Phone No.</label>
+            <input placeholder="phone" name="phone" id="phone" type="number" required/><br><br>
+        <h3>Would you like to receive announcements about new blogs and podcasts?</h3>
+            <input name="receive-information" id="receive-information" type="checkbox"/><br>
+        <label class="comments" for="comments">Comments:</label>
+            <textarea name="comments" id="comments" rows="5" cols="30"></textarea><br><br>
+        <input class="btn" type="button" onclick="myFunction()" value="Submit" />
+    </form>
+    <!-- FOOTER -->
+<footer>
+    <div id="footerContent">
+        <div id="left-footer">
+            <img src="../assets/images/Landing/site-logo-2.png" id="footer-logo" alt="shelter logo">
+            <h3>Adopt them, play with them, help them, and make them happy.</h3>
+        </div>
+        <div id="center-footer">
+            <p>FOLLOW US</p>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+        <div id="right-footer">
+            <p>CALL US</p>
+            <p>+1-613-555-0113</p>
+            <p>+1-416-555-0191</p>
+        </div>
+        <div id="bottom-footer">
+            <p>&copy; 2022 Wags & Whiskers. Pet Adoption Shelter Toronto, Canada. All Rights Reserved</p>
+            <p>PRIVACY POLICY</p>
+            <p>TERMS AND CONDITIONS</p>
+        </div>
+    </div>
+</footer>
+  <script src="../js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../assets/styles/general.css">
+  <link rel="stylesheet" href="../assets/styles/cat_grooming.css">
+  <!-- Fonts Used -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chango&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+
+  
+<style>
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  
+}
+
+
+</style>
+<header>
+  <div id="headerTitle">
+      <img src="../assets/images/General/logo.png" id="logo" alt="shelter logo">
+      <!-- Navbar -->
+      <nav>
+          <ul>
+              <!-- Added dropdown list depending on type of content -->
+              <li class="changeColor dropdown">
+                  <button class="dropbtn">ABOUT PET ADOPTION</button>
+                  <div class="dropdown-content">
+                      <a href="dog_adoption.html">Dog Adoption</a>
+                      <a href="#">Cat Adoption</a>
+                      <a href="gallery.html">Pet Gallery</a>
+                      <a href="Dog-Adopttion.html">Pet Adoption Information</a>
+                      <a href="schedule.html">Schedule a Visit</a>
+                      <a href="faqs.html">FAQS</a>
+                  </div>
+              </li>
+              <li class="changeColor dropdown">
+                  <button class="dropbtn">DOG CARE</button>
+                  <div class="dropdown-content">
+                      <a href="#">Dog Nutrition</a>
+                      <a href="dog_breeds.html">Dog Breeds</a>
+                      <a href="bring_dog.html">Bring Dog at home</a>
+
+                      <a href="#">Dog Grooming</a>
+                  </div>
+              </li>
+              <li class="changeColor dropdown">
+                  <button class="dropbtn">CAT CARE</button>
+                  <div class="dropdown-content">
+                      <a href="cat_care.html">Cat Nutrition</a>
+                      <a href="#">Cat Behavior & Traits</a>
+                      <a href="cat_grooming.html">Cat Grooming</a>
+                      <a href="cat_gallery.html">Cat Gallery</a>
+
+                  </div>
+              </li> 
+              <li class="changeColor dropdown">
+                  <a href="videos.html"><button class="dropbtn">VIDEOS</button></a>
+              </li>
+              <li class="changeColor dropdown">
+                  <a href="about.html"><button class="dropbtn">ABOUT US</button></a>
+              </li>
+              <li class="changeColor dropdown">
+                  <button class="dropbtn">CONTACT</button>
+              </li>
+          </ul>
+      </nav>
+      <!-- Hamburger Menu which will only show on mobile devices -->
+      <input type="checkbox" id="hamburger-input" class="burger-shower" >
+      <label id="hamburger-menu" for="hamburger-input">
+          <nav id="sidebar-menu">
+              <ul>
+                  <!-- Added dropdown list depending on type of content -->
+                  <li class="changeColor dropdown">
+                      <input type="checkbox" class="side-shower" for="hamburger-menu">
+                      <button class="dropbtn">ABOUT PET ADOPTION</button>
+                      <div class="dropdown-content">
+                          <a href="#">Dog Adoption</a>
+                          <a href="#">Cat Adoption</a>
+                          <a href="gallery.html">Pet Gallery</a>
+                          <a href="#">Pet Adoption Information</a>
+                          <a href="schedule.html">Schedule a Visit</a>
+                          <a href="faqs.html">FAQS</a>
+                      </div>
+                  </li>
+                  <li class="changeColor dropdown">
+                      <input type="checkbox" class="side-shower" for="hamburger-menu">
+                      <button class="dropbtn">DOG CARE</button>
+                      <div class="dropdown-content">
+                          <a href="#">Dog Nutrition</a>
+                          <a href="dog_breeds.html">Dog Breeds</a>
+                          <a href="#">Dog Grooming</a>
+                      </div>
+                  </li>
+                  <li class="changeColor dropdown">
+                      <input type="checkbox" class="side-shower" for="hamburger-menu">
+                      <button class="dropbtn">CAT CARE</button>
+                      <div class="dropdown-content">
+                          <a href="cat_care.html">Cat Nutrition</a>
+                          <a href="#">Cat Behavior & Traits</a>
+                          <a href="cat_grooming.html">Cat Grooming</a>
+                      </div>
+                  </li> 
+                  <li class="changeColor dropdown">
+                      <button class="dropbtn">VIDEOS</button>
+                  </li>
+                  <li class="changeColor dropdown">
+                      <a href="about.html"><button class="dropbtn">ABOUT US</button></a>
+                  </li>
+                  <li class="changeColor dropdown">
+                      <button class="dropbtn">CONTACT</button>
+                  </li>
+              </ul>
+          </nav>
+      </label>
+  </div>
+</header>
+
+  <H2><center><B>YOU CAN EXPLORE MORE CAT GROMMINGS HERE!</center><B></H2>
+    <H3><CENTER>YOU CAN CONFIRM YOUR SLOT HERE</CENTER></H3>
+  <button onclick="myFunc()"class="button">SLOT</button>
+<button  onclick="myFunc()" class="button button2">SLOT1</button>
+<button  onclick="myFunc()" class="button button3">SLOT2</button>
+<button  onclick="myFunc()" class="button button4">SLOT3</button>
+<button  onclick="myFunc()" class="button button5">SLOT4</button>
+ 
+<p><CENTER>You can resize the browser window to see the effect.</CENTER></p>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="../assets/images/Cat_grooming/c0.jpg" alt="MEAL" width="250"; height="250">
+      <h3>Express Groom.......$60.00</h3>
+       <P> A quick freshen-up for the face, nails and paws.</p>
+      
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="../assets/images/Cat_grooming/c3.jpg" alt="MEAL" width="250"; height="250">
+      <h3>Classic Groom.......$67.00</h3>
+      <p>A quick freshen-up for the face, nails and paws.</p>
+      
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="../assets/images/Cat_grooming/c4.jpg" alt="MEAL" width="250"; height="250">
+      <h3>Premium Groom.......$87.00</h3>
+      <p>A quick freshen-up for the face, nails and paws.</p>
+      
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="../assets/images/Cat_grooming/c5.jpg" alt="MEAL" width="250"; height="250">
+      <h3>Normal Groom.......$97.00</h3>
+      <p>A quick freshen-up for the face, nails and paws.</p>
+    
+    </div>
+  </div>
+</div>
+
+
+<h3>BOOK YOUR CAT GROOMING</h3>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<footer>
+  <div id="footerContent">
+      <div id="left-footer">
+          <img src="../assets/images/General/logo.png" id="footer-logo" alt="shelter logo">
+          <h3>Adopt them, play with them, help them, and make them happy.</h3>
+      </div>
+      <div id="center-footer">
+          <p>FOLLOW US</p>
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-youtube"></i>
+      </div>
+      <div id="right-footer">
+          <p>CALL US</p>
+          <p>+1-613-555-0113</p>
+          <p>+1-416-555-0191</p>
+      </div>
+      <div id="bottom-footer">
+          <p>&copy; 2022 Wags & Whiskers. Pet Adoption Shelter Toronto, Canada. All Rights Reserved</p>
+          <p>PRIVACY POLICY</p>
+          <p>TERMS AND CONDITIONS</p>
+      </div>
+  </div>
+</footer>
+   
+</body>
+
+<script type="text/javascript" src="../js/cat_grooming.js"></script>
+</html>
+
+
+
+      
+
+
+
+        

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Of dog breeds</title>
+    <link rel="stylesheet" href="../assets/styles/general.css">
+    <link rel="stylesheet" href="../assets/styles/dog_breeds.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div id="headerTitle">
+            <img src="../assets/images/General/logo.png" id="logo" alt="shelter logo">
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <!-- Added dropdown list depending on type of content -->
+                    <li class="changeColor dropdown">
+                        <button class="dropbtn">ABOUT PET ADOPTION</button>
+                        <div class="dropdown-content">
+                            <a href="dog_adoption.html">Dog Adoption</a>
+                            <a href="#">Cat Adoption</a>
+                            <a href="gallery.html">Pet Gallery</a>
+                            <a href="Dog-Adopttion.html">Pet Adoption Information</a>
+                            <a href="schedule.html">Schedule a Visit</a>
+                            <a href="faqs.html">FAQS</a>
+                        </div>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <button class="dropbtn">DOG CARE</button>
+                        <div class="dropdown-content">
+                            <a href="#">Dog Nutrition</a>
+                            <a href="dog_breeds.html">Dog Breeds</a>
+                            <a href="bring_dog.html">Bring Dog at home</a>
+
+                            <a href="#">Dog Grooming</a>
+                        </div>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <button class="dropbtn">CAT CARE</button>
+                        <div class="dropdown-content">
+                            <a href="cat_care.html">Cat Nutrition</a>
+                            <a href="#">Cat Behavior & Traits</a>
+                            <a href="cat_grooming.html">Cat Grooming</a>
+                            <a href="cat_gallery.html">Cat Gallery</a>
+
+                        </div>
+                    </li> 
+                    <li class="changeColor dropdown">
+                        <a href="videos.html"><button class="dropbtn">VIDEOS</button></a>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <a href="about.html"><button class="dropbtn">ABOUT US</button></a>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <button class="dropbtn">CONTACT</button>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Hamburger Menu which will only show on mobile devices -->
+            <input type="checkbox" id="hamburger-input" class="burger-shower" >
+            <label id="hamburger-menu" for="hamburger-input">
+                <nav id="sidebar-menu">
+                    <ul>
+                        <!-- Added dropdown list depending on type of content -->
+                        <li class="changeColor dropdown">
+                            <input type="checkbox" class="side-shower" for="hamburger-menu">
+                            <button class="dropbtn">ABOUT PET ADOPTION</button>
+                            <div class="dropdown-content">
+                                <a href="#">Dog Adoption</a>
+                                <a href="#">Cat Adoption</a>
+                                <a href="gallery.html">Pet Gallery</a>
+                                <a href="#">Pet Adoption Information</a>
+                                <a href="schedule.html">Schedule a Visit</a>
+                                <a href="faqs.html">FAQS</a>
+                            </div>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <input type="checkbox" class="side-shower" for="hamburger-menu">
+                            <button class="dropbtn">DOG CARE</button>
+                            <div class="dropdown-content">
+                                <a href="#">Dog Nutrition</a>
+                                <a href="dog_breeds.html">Dog Breeds</a>
+                            <a href="bring_dog.html">Bring Dog at home</a>
+
+                                <a href="#">Dog Grooming</a>
+                            </div>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <input type="checkbox" class="side-shower" for="hamburger-menu">
+                            <button class="dropbtn">CAT CARE</button>
+                            <div class="dropdown-content">
+                                <a href="cat_care.html">Cat Nutrition</a>
+                                <a href="#">Cat Behavior & Traits</a>
+                                <a href="cat_grooming.html">Cat Grooming</a>
+                            </div>
+                        </li> 
+                        <li class="changeColor dropdown">
+                            <button class="dropbtn">VIDEOS</button>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <a href="about.html"><button class="dropbtn">ABOUT US</button></a>
+                        </li>
+                        <li class="changeColor dropdown">
+                            <button class="dropbtn">CONTACT</button>
+                        </li>
+                    </ul>
+                </nav>
+            </label>
+        </div>
+    </header>
+    <section>
+        <div class="mainbox">
+            <div class="searchbox" id="slidshow">
+                <img src="../assets/images/Dog_breeds/searchbox_img.jpg" id="slideshow" name="slideshow"  alt="">
+                    <div class="searchbar" >
+                        <h1>Find Your Perfect Dog Breed</h1>
+                        <div class="searching">
+                                <div class="icon" onclick="search()">
+                                    <a href="#" id="search"><i class="fa-solid fa-magnifying-glass"></i></a>
+                                </div>
+                                <div class="srch_op">
+                                    <input type="text" id="searching"   placeholder="search">
+                                </div>
+                        </div>
+
+                        <div class="selection">
+                            <div class="sel">
+                                <button>By Collection</button>
+                            </div>
+                            <div class="sel">
+                                <button>By Filters</button>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="find_breed">
+                <h1>Find the Right dog breed for you </h1>
+                <div class="collection_breed">
+                    <div class="pic">
+                        <div calas="breed_pic">
+                            <img src="../assets/images/dog_breeds/breed1.jpg" alt="">
+                            
+                        </div>
+                        <div class="breed_name">
+                            <h3>HYPOALLERGENIC DOG</h3>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <div class="breed_pic">
+                            <img src="../assets/images/dog_breeds/breed2.jpg" alt="">
+                            
+                        </div>
+                        <div class="breed_name">
+                            <h3>SMALL DOG BREEDS</h3>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <div class="breed_pic">
+                            <img src="../assets/images/dog_breeds/breed3.jpg" alt="">
+                            
+                        </div>
+                        <div class="breed_name">
+                            <h3>LARGE DOG BREEDS</h3>
+                        </div>
+                    </div>
+                    <div class="pic">
+                        <div class="breed_pic">
+                            <img src="../assets/images/dog_breeds/breed4.jpg" alt="">
+                            
+                        </div>
+                        <div class="breed_name">
+                            <h3>HAIRLESS DOGS</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="filter">
+                <h1>Filter Breeds</h1>
+                <div class="s_filters">
+                    <div class="size">
+                        <h4>SIZE</h4>
+                        <div class="parts">
+                            <div class="sub_parts1"><p>SMALL</p></div>
+                            <div class="sub_parts2"><p>MEDIEUM</p></div>
+                            <div class="sub_parts3"><p>LARGE</p></div>
+                            <div class="sub_parts4"><P>EXTRA LARGE</P></div>
+                        </div>
+                    </div>
+                    <div class="energy_level">
+                        <h4>ENERGY LEVEL</h4>
+                        <div class="parts">
+                            <div class="sub_parts1"><p>LOW</p></div>
+                            <div class="sub_parts2"><p>MEDIEUM</p></div>
+                            <div class="sub_parts3"><p>HIGH</p></div>
+                            <div class="sub_parts4"><p>VERY HIGH</p></div>
+                        </div>
+                    </div>
+                    <div class="reset">
+                        <h1>Reset Filters(0)</h1>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="various_breeds">
+                <div class="row">
+                    <div class="col" id="first_dog">
+                        <div class="col_pic">
+                            <img src="../assets/images/dog_breeds/New_1.jpg" alt="">
+                        </div>
+                        <div class="box">
+                            <h1><a href="#">Affenpinscher</a></h1>
+                        </div>
+                        <div class="box1">
+                            <p>166 available for adoption</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col" id="second_dog">
+                        <div class="col_pic">
+                            <img src="../assets/images/dog_breeds/New_2.jpg" alt="">
+                        </div>
+                        <div class="box">
+                            <h1><a href="#">Afghan Hound</a></h1>
+                        </div>
+                        <div class="box1">
+                            <p>24 available for adoption</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" id="third_dog">
+                        <div class="col_pic">
+                            <img src="../assets/images/dog_breeds/New_3.jpg" alt="">
+                        </div>
+                        <div class="box">
+                            <h1><a href="#">Airedale Terrier</a></h1>
+                        </div>
+                        <div class="box1">
+                            <p>8710 available for adoption</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col" id="fourth_dog">
+                        <div class="col_pic" >
+                            <img src="../assets/images/dog_breeds/New_8.png" alt="">
+                        </div>
+                        <div class="box">
+                            <h1><a href="#">Akbash</a></h1>
+                        </div>
+                        <div class="box1">
+                            <p>58 available for adoption</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col" id="fifth_dog">
+                        <div class="col_pic">
+                            <img src="../assets/images/dog_breeds/New_5.jpg" alt="">
+                        </div>
+                        <div class="box">
+                            <h1><a href="#">Akita</a></h1>
+                        </div>
+                        <div class="box1">
+                            <p>532 available for adoption</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col">
+                        <div class="col_pic" id="sixth_dog">
+                            <img src="../assets/images/dog_breeds/New_6.png" alt="">
+                        </div>
+                        <div class="box">
+                            <h1><a href="#">Alaskan Klee Kai</a></h1>
+                        </div>
+                        <div class="box1">
+                            <p>18 available for adoption</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="col_pic" id="seventh_dog">
+                            <img src="../assets/images/dog_breeds/New_7.jpg" alt="">
+                        </div>
+                        <div class="box">
+                            <h1><a href="#">Alaskan Malamute</a></h1>
+                        </div>
+                        <div class="box1">
+                            <p>274 available for adoption</p>
+                        </div>
+                        
+                    </div>
+                    <div class="col">
+                        <div class="col_pic" id="eight_dog">
+                            <img src="../assets/images/dog_breeds/New_8.png" alt="">
+                        </div>
+                        <div class="box">
+                            <h1><a href="#">American Bulldog</a></h1>
+                        </div>
+                        <div class="box1">
+                            <p>2870 available for adoption</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    
+    <footer>
+        <div id="footerContent">
+            <div id="left-footer">
+                <img src="../assets/images/General/logo.png" id="footer-logo" alt="shelter logo">
+                <h3>Adopt them, play with them, help them, and make them happy.</h3>
+            </div>
+            <div id="center-footer">
+                <p>FOLLOW US</p>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-youtube"></i>
+            </div>
+            <div id="right-footer">
+                <p>CALL US</p>
+                <p>+1-613-555-0113</p>
+                <p>+1-416-555-0191</p>
+            </div>
+            <div id="bottom-footer">
+                <p>&copy; 2022 Wags & Whiskers. Pet Adoption Shelter Toronto, Canada. All Rights Reserved</p>
+                <p>PRIVACY POLICY</p>
+                <p>TERMS AND CONDITIONS</p>
+            </div>
+        </div>
+    </footer>
+       
+    <script src="../js/dog_breeds.js"></script>
+   
+</body>
+</html>

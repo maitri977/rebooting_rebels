@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Adoption Centre</title>
+    <link rel="stylesheet" href="../assets/styles/general.css">
+    <link rel="stylesheet" href="../assets/styles/landing.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/Pages/General/favicon.ico">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Fonts Used -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chango&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Header -->
+<header>
+    <div id="headerTitle">
+        <img src="../assets/images/General/logo.png" id="logo" alt="shelter logo">
+        <!-- Navbar -->
+        <nav>
+            <ul>
+                <!-- Added dropdown list depending on type of content -->
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">ABOUT PET ADOPTION</button>
+                    <div class="dropdown-content">
+                        <a href="dog_adoption.html">Dog Adoption</a>
+                        <a href="#">Cat Adoption</a>
+                        <a href="gallery.html">Pet Gallery</a>
+                        <a href="#">Pet Adoption Information</a>
+                        <a href="schedule.html">Schedule a Visit</a>
+                        <a href="faqs.html">FAQS</a>
+                    </div>
+                </li>
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">DOG CARE</button>
+                    <div class="dropdown-content">
+                        <a href="#">Dog Nutrition</a>
+                        <a href="dog_breeds.html">Dog Breeds</a>
+                        <a href="bring_dog.html">Bring Dog at home</a>
+
+                        <a href="#">Dog Grooming</a>
+                    </div>
+                </li>
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">CAT CARE</button>
+                    <div class="dropdown-content">
+                        <a href="cat_care.html">Cat Nutrition</a>
+                        <a href="#">Cat Behavior & Traits</a>
+                        <a href="cat_grooming.html">Cat Grooming</a>
+                    <a href="cat_gallery.html">Cat Gallery</a>
+                    </div>
+                </li> 
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">VIDEOS</button>
+                </li>
+                <li class="changeColor dropdown">
+                    <a href="about.html"><button class="dropbtn">ABOUT US</button></a>
+                </li>
+                <li class="changeColor dropdown">
+                    <button class="dropbtn">CONTACT</button>
+                </li>
+            </ul>
+        </nav>
+        <!-- Hamburger Menu which will only show on mobile devices -->
+        <input type="checkbox" id="hamburger-input" class="burger-shower" >
+        <label id="hamburger-menu" for="hamburger-input">
+            <nav id="sidebar-menu">
+                <ul>
+                    <!-- Added dropdown list depending on type of content -->
+                    <li class="changeColor dropdown">
+                        <input type="checkbox" class="side-shower" for="hamburger-menu">
+                        <button class="dropbtn">ABOUT PET ADOPTION</button>
+                        <div class="dropdown-content">
+                            <a href="#">Dog Adoption</a>
+                            <a href="#">Cat Adoption</a>
+                            <a href="gallery.html">Pet Gallery</a>
+                            <a href="#">Pet Adoption Information</a>
+                            <a href="schedule.html">Schedule a Visit</a>
+                            <a href="faqs.html">FAQS</a>
+                        </div>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <input type="checkbox" class="side-shower" for="hamburger-menu">
+                        <button class="dropbtn">DOG CARE</button>
+                        <div class="dropdown-content">
+                            <a href="#">Dog Nutrition</a>
+                            <a href="dog_breeds.html">Dog Breeds</a>
+                            <a href="#">Dog Grooming</a>
+                        </div>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <input type="checkbox" class="side-shower" for="hamburger-menu">
+                        <button class="dropbtn">CAT CARE</button>
+                        <div class="dropdown-content">
+                            <a href="cat_care.html">Cat Nutrition</a>
+                            <a href="#">Cat Behavior & Traits</a>
+                            <a href="cat_grooming.html">Cat Grooming</a>
+                            <a href="cat_gallery.html">Cat Gallery</a>
+
+                        </div>
+                    </li> 
+                    <li class="changeColor dropdown">
+                        <button class="dropbtn">VIDEOS</button>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <a href="about.html"><button class="dropbtn">ABOUT US</button></a>
+                    </li>
+                    <li class="changeColor dropdown">
+                        <button class="dropbtn">CONTACT</button>
+                    </li>
+                </ul>
+            </nav>
+        </label>
+    </div>
+</header>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div class="background-img"></div>
+    <main>
+        <h1>Pets Available For Adoption</h1>
+        <ul class="dog">
+            <li>
+                <img src="../assets/images/Landing/dog.jpg" alt="cute dog">
+                <h3>Lily & Fur</h3>
+                <p>Calm and cute lily and fur comes in a couple of goofballs. <br> They make sure to bring a smile on your face</p>
+            </li>
+            <li>
+                <img src="../assets/images/Landing/dane.jpg" alt="cute dog2">
+                <h3>Scooby</h3>
+                <p>Scooby is a gentle giant with big paws. <br> He loves running in open spaces and disturbes everyone's personal space by giving them cuddles.</p>
+            </li>
+            <li>
+                <img src="../assets/images/Landing/german.jpg" alt="cute dog2">
+                <h3>Jake</h3>
+                <p>Jake is a furry friend who is very calm. <br> Well behaved and calf. Jake used to be in army so hes well trained.</p>
+            </li>
+        </ul>
+        <ul class="dog">
+            <li>
+                <img src="../assets/images/Landing/lily.jpg" alt="cute dog">
+                <h3>Lily</h3>
+                <p>Golden goofball who loves fall season. <br> Potty Trained and playful.</p>
+            </li>
+            <li>
+                <img src="../assets/images/Landing/catto.jpg" alt="cute dog2">
+                <h3>Catto</h3>
+                <p>Gloomy Catto loves to be alone but cuddles at night.<br> Very calm and low maintanance cat. Loves to take evening naps to retain her beauty.</p>
+            </li>
+            <li>
+                <img src="../assets/images/Landing/nibbles.jpg" alt="cute dog2">
+                <h3>Nibbles</h3>
+                <p>Nibbles is a proud cat who thinks he owns humans. <br> Demands excessive love and sleeps whereever there is sunlight. Household sunflower with legs.</p>
+            </li>
+        </ul>   
+    </main>
+    <div class="seventy">
+        <h1>About Pet Adoption</h1>
+        <ul>
+            <li>
+                <img src="../assets/images/Landing/dog-why.jpg" alt="sad dog image">
+                <a href="Sub-Pages/why-dog.html"><h3>Why are dogs given up?</h3></a>
+                <p>Learn the most common reasons dogs are given up</p>
+            </li>
+            <li>
+                <img src="../assets/images/Landing/dane.jpg"dog image">
+                <a href="Sub-pages/First-Month-dog.html"><h3>First Month With A Dog</h3></a>
+                <p>First Month is the most important to bond with a new dog.</p>
+            </li>
+            <li>
+                <img src="../assets/images/Landing/dog-why.jpg" alt="sad dog image">
+                <a href="why-dog.html"><h3>Why are dogs given up?</h3></a>
+                <p>Learn the most common reasons dogs are given up</p>
+            </li>
+        </ul>
+    </div>  
+
+<!-- Footer -->
+<footer>
+    <div id="footerContent">
+        <div id="left-footer">
+            <img src="../assets/images/General/logo.png" id="footer-logo" alt="shelter logo">
+            <h3>Adopt them, play with them, help them, and make them happy.</h3>
+        </div>
+        <div id="center-footer">
+            <p>FOLLOW US</p>
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-youtube"></i>
+        </div>
+        <div id="right-footer">
+            <p>CALL US</p>
+            <p>+1-613-555-0113</p>
+            <p>+1-416-555-0191</p>
+        </div>
+        <div id="bottom-footer">
+            <p>&copy; 2022 Wags & Whiskers. Pet Adoption Shelter Toronto, Canada. All Rights Reserved</p>
+            <p>PRIVACY POLICY</p>
+            <p>TERMS AND CONDITIONS</p>
+        </div>
+    </div>
+</footer>
+<script src="../js/landing.js"></script>
+</body>
+</html>
